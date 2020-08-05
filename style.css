@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: dodgerblue;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: no-repeat url("./robot.gif") center 20%;
+}
+
+button {
+  cursor: pointer;
+  outline: none;
+  width: 12.5rem;
+  height: 5rem;
+  font-family: Orbitron, sans-serif;
+  letter-spacing: 0.25rem;
+  color: whitesmoke;
+  transition: all 0.4s ease;
+  background: linear-gradient(to top right, dodgerblue, navy);
+  border: 2px solid black;
+  border-radius: 5%;
+  box-shadow: 2px 2px 20px 10px rgba(0, 0, 0, 0.3);
+}
+
+button:hover {
+  background: linear-gradient(to bottom left, dodgerblue, navy);
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
